@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+.destaque-amarelo {
+  color: #ffc300;
+  font-weight: 600;
+}
+
+.sobre-nos {
+  width: 100%;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sobre-destaque {
+  position: relative;
+  width: 100vw;
+  padding: 1rem;
+  z-index: 1;
+  overflow: hidden; /* evita que o ::before ultrapasse os limites */
+}
+
+.sobre-destaque::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/img/sobre/fundo_sobre.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: 0.5;
+  z-index: -1;
+}
+.slogan{
+  padding: 2rem 0;
+}
+.tridente {
+  width: 200px;
+  max-width: 100%;
+}
+.estrelas {
+  width: 180px;
+  max-width: 80%;
+}
+
+.sobre-titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.sobre-conteudo {
+  padding: 0 1rem;
+}
+
+.paragrafo-bloco {
+  padding: 2rem 0;
+  color: white;
+  max-width: 900px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.destaque-amarelo {
+  color: #ffc300;
+  font-weight: 600;
+}
